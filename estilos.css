@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Advent+Pro:wght@100&family=Anton&family=Antonio:wght@100&family=Arimo&family=Barlow+Condensed:wght@200&family=Bebas+Neue&family=Changa+One&family=Karla:wght@200&family=Mukta:wght@200&family=Staatliches&family=Ubuntu+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+}
+
+#barra{
+    background-color:rgb(138, 101, 21);
+}
+
+#barra a:hover{
+    color: black;
+}
+
+.navbar-brand{
+    text-transform: uppercase;
+    font-family: 'Staatliches', cursive;
+}
+
+#collapsibleNavbar{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-weight: bold;
+}
+
+main{
+    min-height: 1000px;
+    width: auto;
+}
+
+h1{
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+    padding: 30px;
+}
+
+.galeria{
+    width: auto;
+    min-height:auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 250px);
+    grid-gap: 15px;
+    padding: 35px;
+}
+
+.item{
+    border: 1px solid black;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale();
+    transition: 0.5s;
+}
+
+.item:hover{
+    filter: none;
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.item1{
+    background-image: url(media/engin-akyurt-g-m8EDc4X6Q-unsplash.jpg);
+    grid-column: 1/2 ;
+    grid-row: 1/3;
+}
+
+.item2{
+    background-image: url(media/kelsey-curtis-kD9qprR6HBI-unsplash.jpg) ;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.item3{
+    background-image: url(media/kimia-zarifi-x4J_92kJBoY-unsplash.jpg);
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.item4{
+    background-image: url(media/maddi-bazzocco-UKGGgWb6_0g-unsplash.jpg);
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.item5{
+    background-image: url(media/raphael-lovaski-Pe9IXUuC6QU-unsplash.jpg);
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+.item6{
+    background-image: url(media/viva-luna-studios-hYpHkpQG5ms-unsplash.jpg);
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.cuerpo h3{
+    text-align: left;
+    margin-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: rgb(116, 28, 28);
+    margin-bottom: 15px;
+}
+
+.apartado{
+    margin-top: 20px;
+}
+
+.apartado p{
+    padding: 20px;
+}
+
+.enlace{
+    text-align: center;
+    padding: 20px;
+}
+
+.cuerpo a{
+    text-decoration: none;
+    color: rgb(185, 237, 158);
+    background-color: black;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 13.5px;
+    border: 1px solid black;
+}
+
+.cuerpo a:hover{
+    background-color:rgba(150, 46, 46, 0.567);;
+    color: black;
+    font-weight: bold;
+}
+
+.servicios{
+    min-height: 40%;
+    width: auto;
+    background-color: white;
+    padding: 25px;
+    margin: 25px 20px;
+    border-radius: 20px;
+}
+
+.contenedor{
+    display: flex;
+}
+
+.servicios__img1{
+    height: 180px;
+    width: auto;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.servicios__img2{
+    height: 200px;
+    width: auto;
+    margin-right: 30px;
+}
+
+.servicios__img3{
+    height: 150px;
+    width: auto;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.cajas img{
+    border-radius: 10px;
+}
+
+.servicios__titulo{
+    margin-bottom: 10px;
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+
+.servicios__boton{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    background-color: rgb(236, 231, 167);
+    padding: 8px;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    justify-content: right;
+    margin-top: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cajas a{
+    transition: 0.5s;
+}
+
+.cajas a:hover{
+    background-color: rgba(165, 42, 42, 0.798);
+    color: white;
+    transition: 0.5s;
+}
+
+.servicios__parrafo{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding: 40px;
+    margin-bottom: 15px;
+}
+
+.servicios__lista{
+    list-style-position: inside;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.encontranos{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.encontranos p{
+    margin-bottom: 20px;
+}
+
+.formulario{
+    padding: 25px;
+}
+
+.boton{
+    text-align: center;
+}
+
+footer{
+    height: auto;
+    width: auto;
+    background-color: rgb(138, 101, 21);
+    text-align: center;
+    padding: 17px;
+}
+
+.logopie{
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-family: 'Staatliches', cursive;
+    color: white;
+}
+
+.logopie a{
+    color: white;
+    text-decoration: none;
+}
+
+.logopie a:hover{
+    color: black;
+}
+
+.redes{
+    font-size: 24px;
+    letter-spacing: 5px;
+}
+
+.redes a{
+    color: white;
+}
+
+.redes a:hover{
+    color: black;
+}
+
+footer p{
+    margin-top: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    color: white;
+}
+
