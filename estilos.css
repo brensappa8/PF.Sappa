@@ -28,7 +28,7 @@ body{
 }
 
 main{
-    min-height: 1000px;
+    min-height: 600px;
     width: auto;
 }
 
@@ -128,116 +128,48 @@ h1{
     text-transform: uppercase;
 }
 
-.cuerpo a{
+.enlace a{
     text-decoration: none;
-    color: rgb(185, 237, 158);
+    color: white;
     background-color: black;
-    padding: 7px;
+    padding: 3px;
     border-radius: 5px;
     font-size: 13.5px;
     border: 1px solid black;
 }
 
-.cuerpo a:hover{
-    background-color:rgba(150, 46, 46, 0.567);;
+.enlace a:hover{
+    background-color:rgba(205, 160, 36, 0.567);;
     color: black;
-    font-weight: bold;
 }
 
-.servicios{
-    min-height: 40%;
-    width: auto;
-    background-color: white;
-    padding: 25px;
-    margin: 25px 20px;
-    border-radius: 20px;
+.card{
+    margin: 40px;
 }
 
-.contenedor{
-    display: flex;
-}
-
-.servicios__img1{
-    height: 180px;
-    width: auto;
-    margin-top: 20px;
-    margin-left: 30px;
-}
-
-.servicios__img2{
-    height: 200px;
-    width: auto;
-    margin-right: 30px;
-}
-
-.servicios__img3{
-    height: 150px;
-    width: auto;
-    margin-top: 40px;
-    margin-left: 10px;
-}
-
-.cajas img{
-    border-radius: 10px;
-}
-
-.servicios__titulo{
-    margin-bottom: 10px;
-    margin-left: 30px;
-    text-transform: uppercase;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
-}
-
-
-.servicios__boton{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    background-color: rgb(236, 231, 167);
-    padding: 8px;
-    border-radius: 3px;
-    font-size: 13px;
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    justify-content: right;
-    margin-top: 40px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.cajas a{
-    transition: 0.5s;
-}
-
-.cajas a:hover{
-    background-color: rgba(165, 42, 42, 0.798);
+.card a{
+    background-color: rgb(177, 131, 26);
     color: white;
-    transition: 0.5s;
 }
 
-.servicios__parrafo{
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    padding: 40px;
-    margin-bottom: 15px;
+.card a:hover{
+    color: black;
 }
 
-.servicios__lista{
-    list-style-position: inside;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
+.cajas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .encontranos{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 18px;
 }
 
-.encontranos p{
-    margin-bottom: 20px;
+.encontranos .mapa{
+    margin: 20px;
 }
 
 .formulario{
@@ -246,6 +178,15 @@ h1{
 
 .boton{
     text-align: center;
+}
+
+.boton .btn{
+    background-color: rgb(177, 131, 26);
+    color: white;
+}
+
+.boton .btn:hover{
+    color: black;
 }
 
 footer{
