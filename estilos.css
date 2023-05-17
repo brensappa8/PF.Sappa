@@ -123,7 +123,8 @@ body .cuerpo .enlace p {
 body .cuerpo .enlace aside {
   font-size: 14px;
 }
-body .cuerpo .enlace p, body .cuerpo .enlace aside {
+body .cuerpo .enlace p,
+body .cuerpo .enlace aside {
   text-transform: uppercase;
 }
 body .cuerpo .enlace .btn-grad {
@@ -244,27 +245,6 @@ footer p {
 }
 
 @media (max-width: 700px) {
-  .galeria {
-    width: auto;
-    min-height: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 250px);
-    grid-gap: 15px;
-    padding: 35px;
-  }
-  .galeria .item {
-    border: 1px solid black;
-    background-size: cover;
-    background-position: center;
-    filter: grayscale(1);
-    transition: 0.5s;
-  }
-  .galeria .item:hover {
-    filter: none;
-    transition: 0.5s;
-    transform: scale(1.05);
-  }
   .galeria .item1 {
     background-image: url(media/engin-akyurt-g-m8EDc4X6Q-unsplash.jpg);
     grid-column: 1/3;

@@ -45,15 +45,15 @@ body {
 
         @keyframes titulo {
 
-            50%{
+            50% {
                 transform: translateX(300px);
             }
 
-            90%{
+            90% {
                 transform: translateX(-300px);
             }
 
-            100%{
+            100% {
                 transform: translateX(0);
             }
         }
@@ -142,15 +142,16 @@ body {
             text-align: center;
             padding: 20px;
 
-            p{
+            p {
                 font-weight: bold;
             }
 
-            aside{
+            aside {
                 font-size: 14px;
             }
 
-            p,aside {
+            p,
+            aside {
                 text-transform: uppercase;
             }
 
@@ -184,6 +185,7 @@ body {
 
         .card {
             margin: 40px;
+
             a {
                 background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
                 margin: 4px;
@@ -197,13 +199,14 @@ body {
                 box-shadow: 0 0 20px #eee;
                 border-radius: 10px;
                 display: inline-block;
-                }
+            }
+
             a:hover {
                 background-position: right center;
                 color: #fff;
                 text-decoration: none;
             }
-                
+
         }
     }
 
@@ -237,6 +240,7 @@ body {
                 border-radius: 10px;
                 display: inline-block;
             }
+
             .btn:hover {
                 background-position: right center;
                 color: #fff;
@@ -294,62 +298,41 @@ footer {
 
 @media (max-width:700px) {
     .galeria {
-        width: auto;
-        min-height: auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 250px);
-        grid-gap: 15px;
-        padding: 35px;
-
-        .item {
-            border: 1px solid black;
-            background-size: cover;
-            background-position: center;
-            filter: grayscale(1);
-            transition: 0.5s;
-        }
-
-        .item:hover {
-            filter: none;
-            transition: 0.5s;
-            transform: scale(1.05);
-        }
 
         .item1 {
             background-image: url(media/engin-akyurt-g-m8EDc4X6Q-unsplash.jpg);
             grid-column: 1/3;
             grid-row: 1/3;
         }
-
+    
         .item2 {
             background-image: url(media/kelsey-curtis-kD9qprR6HBI-unsplash.jpg);
             grid-column: 3/4;
             grid-row: 1/2;
         }
-
+    
         .item3 {
             background-image: url(media/kimia-zarifi-x4J_92kJBoY-unsplash.jpg);
             grid-column: 3/4;
             grid-row: 2/3;
         }
-
+    
         .item4 {
             background-image: url(media/maddi-bazzocco-UKGGgWb6_0g-unsplash.jpg);
             grid-column: 1/4;
             grid-row: 3/4;
         }
-
+    
         .item5 {
             background-image: url(media/raphael-lovaski-Pe9IXUuC6QU-unsplash.jpg);
             grid-column: 1/3;
             grid-row: 4/5;
         }
-
+    
         .item6 {
             background-image: url(media/viva-luna-studios-hYpHkpQG5ms-unsplash.jpg);
             grid-column: 3/4;
             grid-row: 4/5;
-        }
-    }
+        } 
+}
 }
