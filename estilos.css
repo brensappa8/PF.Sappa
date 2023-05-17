@@ -32,6 +32,20 @@ body main h1 {
   font-family: "Bebas Neue", cursive;
   font-size: 35px;
   padding: 30px;
+  animation-name: titulo;
+  animation-delay: 2s;
+  animation-duration: 3s;
+}
+@keyframes titulo {
+  50% {
+    transform: translateX(300px);
+  }
+  90% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 body main .galeria {
   width: auto;
@@ -139,10 +153,13 @@ body .cajas .card {
   margin: 40px;
 }
 body .cajas .card a {
-  background-color: rgb(177, 131, 26);
+  background-image: linear-gradient(to right, #a39065, #7e5f30);
   color: white;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px #eee;
 }
 body .cajas .card a:hover {
+  background-position: right center;
   color: black;
 }
 body .encontranos {
@@ -161,10 +178,13 @@ body .formulario .boton {
   text-align: center;
 }
 body .formulario .boton .btn {
-  background-color: rgb(177, 131, 26);
+  background-image: linear-gradient(to right, #a39065, #7e5f30);
   color: white;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px #eee;
 }
 body .formulario .boton .btn:hover {
+  background-position: right center;
   color: black;
 }
 
