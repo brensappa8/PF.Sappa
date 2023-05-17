@@ -7,31 +7,25 @@
 body {
   background-color: white;
 }
-
-#barra {
+body #barra {
   background-color: rgb(138, 101, 21);
 }
-
-#barra a:hover {
+body #barra a:hover {
   color: black;
 }
-
-.navbar-brand {
+body #barra .navbar-brand {
   text-transform: uppercase;
   font-family: "Staatliches", cursive;
 }
-
-#collapsibleNavbar {
+body #barra #collapsibleNavbar {
   font-family: "Ubuntu Condensed", sans-serif;
   font-weight: bold;
 }
-
-main {
+body main {
   min-height: 600px;
   width: auto;
 }
-
-h1 {
+body main h1 {
   text-align: center;
   color: black;
   text-transform: uppercase;
@@ -39,8 +33,7 @@ h1 {
   font-size: 35px;
   padding: 30px;
 }
-
-.galeria {
+body main .galeria {
   width: auto;
   min-height: auto;
   display: grid;
@@ -49,58 +42,49 @@ h1 {
   grid-gap: 15px;
   padding: 35px;
 }
-
-.item {
+body main .galeria .item {
   border: 1px solid black;
   background-size: cover;
   background-position: center;
   filter: grayscale(1);
   transition: 0.5s;
 }
-
-.item:hover {
+body main .galeria .item:hover {
   filter: none;
   transition: 0.5s;
   transform: scale(1.05);
 }
-
-.item1 {
+body main .galeria .item1 {
   background-image: url(media/engin-akyurt-g-m8EDc4X6Q-unsplash.jpg);
   grid-column: 1/2;
   grid-row: 1/3;
 }
-
-.item2 {
+body main .galeria .item2 {
   background-image: url(media/kelsey-curtis-kD9qprR6HBI-unsplash.jpg);
   grid-column: 2/3;
   grid-row: 1/2;
 }
-
-.item3 {
+body main .galeria .item3 {
   background-image: url(media/kimia-zarifi-x4J_92kJBoY-unsplash.jpg);
   grid-column: 3/4;
   grid-row: 1/2;
 }
-
-.item4 {
+body main .galeria .item4 {
   background-image: url(media/maddi-bazzocco-UKGGgWb6_0g-unsplash.jpg);
   grid-column: 2/4;
   grid-row: 2/3;
 }
-
-.item5 {
+body main .galeria .item5 {
   background-image: url(media/raphael-lovaski-Pe9IXUuC6QU-unsplash.jpg);
   grid-column: 1/3;
   grid-row: 3/4;
 }
-
-.item6 {
+body main .galeria .item6 {
   background-image: url(media/viva-luna-studios-hYpHkpQG5ms-unsplash.jpg);
   grid-column: 3/4;
   grid-row: 3/4;
 }
-
-.cuerpo h3 {
+body .cuerpo h3 {
   text-align: left;
   margin-left: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -109,82 +93,78 @@ h1 {
   color: rgb(116, 28, 28);
   margin-bottom: 15px;
 }
-
-.apartado {
+body .cuerpo .apartado {
   margin-top: 20px;
 }
-
-.apartado p {
+body .cuerpo .apartado p {
   padding: 20px;
 }
-
-.enlace {
+body .cuerpo .enlace {
   text-align: center;
   padding: 20px;
 }
-
-.enlace h5 {
+body .cuerpo .enlace p {
+  font-weight: bold;
+}
+body .cuerpo .enlace aside {
+  font-size: 14px;
+}
+body .cuerpo .enlace p, body .cuerpo .enlace aside {
   text-transform: uppercase;
 }
-
-.enlace a {
+body .cuerpo .enlace .btn-grad {
+  background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
+  margin: 4px;
+  padding: 7px 7px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: inline-block;
+}
+body .cuerpo .enlace .btn-grad:hover {
+  background-position: right center;
+  color: #fff;
   text-decoration: none;
-  color: white;
-  background-color: black;
-  padding: 3px;
-  border-radius: 5px;
-  font-size: 13.5px;
-  border: 1px solid black;
 }
-
-.enlace a:hover {
-  background-color: rgba(205, 160, 36, 0.567);
-  color: black;
-}
-
-.card {
-  margin: 40px;
-}
-
-.card a {
-  background-color: rgb(177, 131, 26);
-  color: white;
-}
-
-.card a:hover {
-  color: black;
-}
-
-.cajas {
+body .cajas {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-
-.encontranos {
+body .cajas .card {
+  margin: 40px;
+}
+body .cajas .card a {
+  background-color: rgb(177, 131, 26);
+  color: white;
+}
+body .cajas .card a:hover {
+  color: black;
+}
+body .encontranos {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 18px;
 }
-
-.encontranos .mapa {
+body .encontranos .mapa {
   margin: 20px;
+  line-height: 50%;
 }
-
-.formulario {
+body .formulario {
   padding: 25px;
 }
-
-.boton {
+body .formulario .boton {
   text-align: center;
 }
-
-.boton .btn {
+body .formulario .boton .btn {
   background-color: rgb(177, 131, 26);
   color: white;
 }
-
-.boton .btn:hover {
+body .formulario .boton .btn:hover {
   color: black;
 }
 
@@ -195,87 +175,87 @@ footer {
   text-align: center;
   padding: 17px;
 }
-
-.logopie {
+footer .logopie {
   font-size: 24px;
   text-transform: uppercase;
   margin-bottom: 10px;
   font-family: "Staatliches", cursive;
   color: white;
 }
-
-.logopie a {
+footer .logopie a {
   color: white;
   text-decoration: none;
 }
-
-.logopie a:hover {
+footer .logopie a:hover {
   color: black;
 }
-
-.redes {
+footer .redes {
   font-size: 24px;
   letter-spacing: 5px;
 }
-
-.redes a {
+footer .redes a {
   color: white;
 }
-
-.redes a:hover {
+footer .redes a:hover {
   color: black;
 }
-
 footer p {
   margin-top: 30px;
   font-family: "Courier New", Courier, monospace;
   font-size: 10px;
   color: white;
-}/*# sourceMappingURL=estilos.css.map */
+}
 
-@media (max-width:700px) {
+@media (max-width: 700px) {
   .galeria {
     width: auto;
     min-height: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 250px);
+    grid-template-rows: repeat(3, 250px);
     grid-gap: 15px;
     padding: 35px;
   }
-  .item1 {
+  .galeria .item {
+    border: 1px solid black;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(1);
+    transition: 0.5s;
+  }
+  .galeria .item:hover {
+    filter: none;
+    transition: 0.5s;
+    transform: scale(1.05);
+  }
+  .galeria .item1 {
     background-image: url(media/engin-akyurt-g-m8EDc4X6Q-unsplash.jpg);
     grid-column: 1/3;
     grid-row: 1/3;
   }
-  
-  .item2 {
+  .galeria .item2 {
     background-image: url(media/kelsey-curtis-kD9qprR6HBI-unsplash.jpg);
     grid-column: 3/4;
     grid-row: 1/2;
   }
-  
-  .item3 {
+  .galeria .item3 {
     background-image: url(media/kimia-zarifi-x4J_92kJBoY-unsplash.jpg);
     grid-column: 3/4;
     grid-row: 2/3;
   }
-  
-  .item4 {
+  .galeria .item4 {
     background-image: url(media/maddi-bazzocco-UKGGgWb6_0g-unsplash.jpg);
     grid-column: 1/4;
     grid-row: 3/4;
   }
-  
-  .item5 {
+  .galeria .item5 {
     background-image: url(media/raphael-lovaski-Pe9IXUuC6QU-unsplash.jpg);
     grid-column: 1/3;
     grid-row: 4/5;
   }
-  
-  .item6 {
+  .galeria .item6 {
     background-image: url(media/viva-luna-studios-hYpHkpQG5ms-unsplash.jpg);
     grid-column: 3/4;
     grid-row: 4/5;
   }
-}
+}/*# sourceMappingURL=estilos.css.map */
