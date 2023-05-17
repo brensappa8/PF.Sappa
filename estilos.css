@@ -33,7 +33,7 @@ body main h1 {
   font-size: 35px;
   padding: 30px;
   animation-name: titulo;
-  animation-delay: 2s;
+  animation-delay: 1s;
   animation-duration: 3s;
 }
 @keyframes titulo {
@@ -153,14 +153,23 @@ body .cajas .card {
   margin: 40px;
 }
 body .cajas .card a {
-  background-image: linear-gradient(to right, #a39065, #7e5f30);
-  color: white;
+  background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
+  margin: 4px;
+  padding: 10px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  transition: 0.5s;
   background-size: 200% auto;
+  color: white;
   box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: inline-block;
 }
 body .cajas .card a:hover {
   background-position: right center;
-  color: black;
+  color: #fff;
+  text-decoration: none;
 }
 body .encontranos {
   text-align: center;
@@ -178,14 +187,22 @@ body .formulario .boton {
   text-align: center;
 }
 body .formulario .boton .btn {
-  background-image: linear-gradient(to right, #a39065, #7e5f30);
-  color: white;
+  background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
+  margin: 4px;
+  padding: 10px 10px;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-size: 14px;
   background-size: 200% auto;
+  color: white;
   box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: inline-block;
 }
 body .formulario .boton .btn:hover {
   background-position: right center;
-  color: black;
+  color: #fff;
+  text-decoration: none;
 }
 
 footer {
